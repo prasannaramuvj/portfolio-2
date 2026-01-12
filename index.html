@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasanna Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" alt="logo-img" class="logo">
+        <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        <ul class="show">
+          <li class="close-icon"><i class="fa-solid fa-xmark"></i></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Frontend Developer</p>
+        <h1>I'am <span>Prasanna</span> <br> from Thanjavur</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/user.png" alt="user img">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Motivated Frontend Developer with hands-on experience in HTML, CSS, Bootstrap,
+            JavaScript, and React. Passionate about building responsive and user-friendly web
+            applications and continuously improving skills through real-world projects and internship
+            experience.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-link active-link" onclick="opentab('skill',event)">Skill</p>
+            <p class="tab-link" onclick="opentab('experience',event)">Experience</p>
+            <p class="tab-link" onclick="opentab('education',event)">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>HTML5</span></li>
+              <li><span>CSS3</span></li>
+              <li><span>BOOTSTRAP</span></li>
+              <li><span>JAVASCRIPT</span></li>
+              <li><span>REACT JS</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li> Frontend Developer Intern <br> <span> Ebrain Technologies Pvt.Ltd Thanjavur</span></li>
+              <li><span>May 2025 - Dec 2025</span></li>
+              <li>Developed responsive landing page websites using HTML, CSS, and Bootstrap with a focus on UI design
+              </li>
+              <li>Implemented interactive features using JavaScript and ES6 concepts such as arrow functions, arrays,
+                objects, and modules</li>
+              <li>Built component-based user interfaces using React.js hooks and modern React practices</li>
+              <li>Collaborated with team members to debug UI issues and improve overall user experience</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li> K Ramakrishnan college of Technology ,Trichy <br> <span> B.E(CSE)</span> </li>
+              <li><span>July 2021 - May 2025</span></li>
+              <li>CGPA - 7.9</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="service">
+    <div class="container">
+      <h1 class="sub-title">Services</h1>
+      <div class="services-list" id="services-list">
+
+      </div>
+    </div>
+  </div>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Portfolio</h1>
+      <div class="work-list">
+        <div class="work" id="work">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="left-container">
+          <div class="detail">
+            <p><span><i class="fa-solid fa-message"></i></span>prasannaramu2004@gmail.com</p>
+            <p><span><i class="fa-solid fa-mobile"></i></span>+91 9360237954</p>
+          </div>
+          <div class="detail-icon">
+            <a href=""><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-github"></i></span></a>
+            <a href=""><span></span></a>
+
+          </div>
+        </div>
+        <div class="right-container">
+          <form class="" name="submit-to-google-sheet">
+            <input type="text" class="name-input" name="Name" placeholder="Enter your Name" required>
+            <input type="text" class="mail-input" name="Email" placeholder="Enter your Email" required>
+            <textarea name="message" id="message-input" name="Message" placeholder="Enter the message" rows="10"
+              required></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+<script src="services_data.js"></script>
+<script src="mywork_data.js"></script>
+<script src="script.js"></script>
+
+</html>
